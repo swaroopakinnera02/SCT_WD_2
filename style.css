@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  color: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.time {
+  font-size: 3rem;
+  margin: 20px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  color: white;
+}
+
+#start {
+  background: #28a745;
+}
+
+#pause {
+  background: #ffc107;
+  color: black;
+}
+
+#reset {
+  background: #dc3545;
+}
+
+#lap {
+  background: #17a2b8;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.laps-container {
+  margin-top: 25px;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.laps-container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#laps {
+  list-style: none;
+}
+
+#laps li {
+  background: rgba(255,255,255,0.15);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+@media (max-width: 500px) {
+  .time {
+    font-size: 2.2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
